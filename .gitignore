@@ -1,0 +1,29 @@
+# Data & Storage
+storage/
+logs/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment & Secrets
+.env
+stack.env
+config.ini
+*.yml
+*.yaml
+*accessKey*
+*.access_key
+*.csv
+
+# S3 config & credentials
+s3_data/
+
+# Claude
+.claude/
+
+# Local/Temp
+tmp/
+*.log

@@ -1,0 +1,13 @@
+# Public S3 Buckets for SeaweedFS Mirror/Cache Setup
+# All buckets use anonymous (no-sign-request) access
+# Region: us-east-1 for all
+#
+# Format: bucket_name | prefix | description | estimated_size
+# ============================================================
+
+# --- Already downloaded to NAS ---
+com-courtlistener-storage | bulk-data/ | US Federal/State caselaw corpus | ~50 GB
+
+# --- To mirror/cache via SeaweedFS ---
+openalex | data/ | Academic works, authors, institutions, sources, publishers, funders, topics (250M+ works) | ~300 GB
+commoncrawl | crawl-data/CC-NEWS/ | News articles worldwide 2016-present (S3 listing blocked, use HTTP index for enumeration, direct object GET works) | ~500 GB
